@@ -1,0 +1,151 @@
+html {
+  font-family: 'Noto Serif';
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Noto Sans';
+}
+
+body {
+  display: grid;
+  gap: 10px;
+  min-height: 100vh;
+  background-color: whitesmoke;
+}
+
+header,
+article,
+aside,
+footer {
+  border: 2px solid;
+  background-color: white;
+}
+
+header,
+footer {
+  color: white;
+  background-color: grey;
+  border: 2px solid black;
+}
+
+article,
+aside,
+footer {
+  padding: 10px;
+}
+
+header h1 {
+  text-align: center;
+}
+
+header nav ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+  text-align: center;
+  line-height: 3;
+}
+
+header nav ul li {
+  border-top: 2px solid;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+header nav ul li:hover {
+  background-color: lightgrey;
+  color: black;
+  & a {
+    color: black;
+  }
+}
+
+main {
+  display: grid;
+  gap: 10px;
+}
+
+aside ul {
+  list-style: none;
+  line-height: 2;
+  display: flex;
+  flex-flow: column;
+}
+
+aside ul li a {
+  color: black;
+}
+
+@media screen and (min-width: 600px) {
+  body {
+    grid-template-rows: 5em auto 5em;
+  }
+
+  header {
+    grid-row: 1;
+    display: flex;
+    flex-flow: row;
+  }
+
+  header h1 {
+    flex: 1;
+    padding-left: 1em;
+  }
+
+  header nav {
+    flex: 0.5;
+    display: flex;
+    align-items: stretch;
+  }
+
+  header nav ul {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  header nav ul li {
+    line-height: 2.5;
+    border: 2px solid;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  main {
+    grid-row: 2;
+    grid-template-columns: 3fr 1fr;
+  }
+
+  article {
+    grid-column: 1;
+    grid: 1;
+  }
+
+  article h2,
+  article h3 {
+    margin-left: 4%;
+  }
+
+  aside {
+    grid-column: 2;
+    grid: 1;
+  }
+
+  aside h2 {
+    text-align: center;
+  }
+  
+  footer {
+    grid-row: 3;
+  }
+  
+}

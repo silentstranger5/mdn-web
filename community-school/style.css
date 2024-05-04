@@ -1,0 +1,115 @@
+/* General setup */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  min-width: 1000px;
+  max-width: 1400px;
+}
+
+/* Layout */
+
+section {
+  float: left;
+  width: 50%;
+}
+
+aside {
+  float: left;
+  width: 30%;
+}
+
+nav {
+  float: left;
+  width: 20%;
+}
+
+footer {
+  clear: both;
+}
+
+header, section, aside, nav, footer {
+  padding: 20px;
+}
+
+/* header and footer */
+
+header, footer {
+  border-top: 5px solid #a66;
+  border-bottom: 5px solid #a66;
+}
+
+/* WRITE YOUR CODE BELOW HERE */
+
+html {
+  font-family: 'Noto Serif', serif;
+  font-size: 16px;
+}
+
+h1, h2 {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 1.4em;
+  text-align: center;
+  letter-spacing: 1.2;
+}
+
+body {
+  line-height: 1.4;
+  letter-spacing: 1.2;
+  word-spacing: 1.2;
+}
+
+section h2 + p {
+  text-indent: 2em;
+}
+
+a {
+  outline-color: transparent;
+}
+
+a:link {
+  color: indianred;
+  text-decoration-color: indianred;
+}
+
+a:focus {
+  color: pink;
+  text-decoration: none;
+}
+
+a:hover {
+  color: darksalmon;
+  text-decoration: none;
+}
+
+a:active {
+  color: crimson;
+  background-color: pink;
+}
+
+a[href^="https"] {
+  background: url(external-link-52.png) 100% 0% no-repeat;
+  background-size: 0.8em;
+  padding-right: 1em;
+}
+
+li {
+  line-height: inherit;
+  list-style-type: square;
+}
+
+nav li {
+  border: 1px solid indianred;
+  font-size: 1.2em;
+  text-align: center;
+  margin: 1.2rem;
+  list-style-type: none;
+  line-height: 3;
+}
+
+nav li a {
+  text-decoration: none;
+}
